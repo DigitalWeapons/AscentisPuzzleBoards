@@ -1,0 +1,20 @@
+{
+    "puzzleBoards": [
+      {
+        "image": "pb.png",
+        "id": 1,
+        "xPos": 100,
+        "yPos": 100,
+        "slots": {"amount": 5, "width": 50, "height": 50},
+        "items": {}
+      },
+      {
+        "image": "pb.png",
+        "id": 2,
+        "xPos": 100,
+        "yPos": 800,
+        "slots": {"amount": 5, "width": 50, "height": 50},
+        "items": {"image": "star.png", "amount": 5}
+      }
+    ]
+  }

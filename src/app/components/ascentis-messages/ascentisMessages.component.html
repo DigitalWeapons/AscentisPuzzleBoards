@@ -1,0 +1,8 @@
+<div [id]="elementDetails.domID" [class]="elementDetails.domClass" *ngIf="ascentisMessageService.ascentisMessages.length">
+
+    <h2>Ascentis Messages</h2>
+    <button class="clear"
+            (click)="ascentisMessageService.clear()">Clear messages</button>
+    <div *ngFor='let ascentisMessage of ascentisMessageService.ascentisMessages'> {{ascentisMessage}} </div>
+  
+  </div>

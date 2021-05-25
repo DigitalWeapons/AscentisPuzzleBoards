@@ -1,0 +1,26 @@
+<!--           
+  
+  ***Ascentis Software ***              
+
+  Title:          Puzzle Boards
+  Purpose:        To define the conditions of each puzzle board to the browser UI.
+  Project:        Puzzle  Boards
+  Author:         Dean Smith
+  Authored on:    20/05/2021
+  Last Edited by: Dean Smith
+  Last Edited on: 25/05/2021
+
+-->
+<ul [id]="elementDetails.domID" [class]="elementDetails.domClass">
+  <li [ngStyle]="getBoardGroupStyle()" *ngFor="let puzzleBoard of puzzleBoards" [class.selected]="puzzleBoard === selectedBoard" (click)="onSelect(puzzleBoard)">
+    <span [class]="idNumberClass">{{puzzleBoard.id}}</span>
+    <div [ngStyle]="getBoardStyle(puzzleBoard)">
+      <li [ngStyle]="getSlotGroupStyle()" *ngFor="let slotElementIteration of getSlots(puzzleBoard); index as i;">
+        <div cdkDrop [ngStyle]="getSlotStyle(slotElementIteration)">
+          <img [src]="puzzleBoard.items.image()" [ngStyle]="getItemStyle(puzzleBoard.items)" cdkDrag>
+        </div> 
+      </li>
+    </div> 
+  </li>
+</ul>
+
