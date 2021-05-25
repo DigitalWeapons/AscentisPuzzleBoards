@@ -1,7 +1,7 @@
 //|********************************|| Ascentis Software||******************************|
 //* Project        : Puzzle Boards
 //*
-//* Interface name : PuzzleBoardsService
+//* Service name   : PuzzleBoardsService
 //*
 //* Author         : Dean Smith
 //* Date created   : 20/05/2021
